@@ -45,12 +45,3 @@ def update(id, title, author, year, isbn):
 	cur.execute("UPDATE book SET title = ?, author = ?, year = ?, isbn = ? WHERE id = ?", (title, author, year, isbn, id))
 	conn.commit()
 	conn.close()
-
-#insert("Kite Runner", "Khaled", 1980, 9563946)
-#insert("The earth", "Jinu Daniel", 1920, 9564525)
-#insert("The Sun", "Deepshikha", 1990, 9930126)
-#delete(1)
-#update(3, "The Sun", "Deepshikha Arora", 1990, 9930126)
-print(search(author="Deepshikha Arora"))
-print(view())	
-
